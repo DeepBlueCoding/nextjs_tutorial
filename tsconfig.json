@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -20,8 +20,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@/components/*": ["_components/*"]
+      "@/components/*": ["app/(frontend)/_components/*"],
+      "@/controllers/*": ["app/(backend)/(controllers)/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
