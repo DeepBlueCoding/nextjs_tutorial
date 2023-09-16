@@ -1,6 +1,0 @@
-{
-  "jest.virtualFolders": [
-    {"name": "unit-tests", "jestCommandLine": "yarn test", "autoRun": "watch"},
-    {"name": "integration-tests", "jestCommandLine": "yarn e2e", "autoRun": "off"}
-  ]
-}
