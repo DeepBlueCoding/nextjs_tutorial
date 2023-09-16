@@ -14,10 +14,15 @@ module.exports = {
     '!<rootDir>/.next/**',
     '!<rootDir>/*.config.js',
     '!<rootDir>/coverage/**',
+    '!<rootDir>/e2e/**/*',
   ],
   moduleNameMapper,
   // Add more setup options before each test is run
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
+  testPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/.next/',
+    '<rootDir>/e2e/',
+    ],
   testEnvironment: 'jsdom',
   transform: {
     // Use babel-jest to transpile tests with the next/babel preset
